@@ -1,0 +1,76 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Retrieve a consent - valid",
+        "description": "",
+        "id": "retrieve-consent;retrieve-a-consent---valid",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5045363188,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I have access to consent service",
+            "match": {
+              "location": "CreateSteps.iHaveAccessToConsentService()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3807438233,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I retrieve a consent using on \"/invitation-code/1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/invitation-code/1",
+                  "offset": 31
+                }
+              ],
+              "location": "RetrieveSteps.iRetrieveAConsentUsingOn(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 559676907,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the following get consent result is available",
+            "match": {
+              "location": "RetrieveSteps.theFollowingGetConsentResultIsAvailable()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@retrieve"
+          }
+        ]
+      }
+    ],
+    "name": "Retrieve Consent",
+    "description": "",
+    "id": "retrieve-consent",
+    "keyword": "Feature",
+    "uri": "/Users/Olu/Documents/api-test/consent-api-test/src/test/resources/Features/RetrieveConsent.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@regression"
+      }
+    ]
+  }
+]

@@ -1,0 +1,80 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Updating a consent - valid",
+        "description": "",
+        "id": "update-consent;updating-a-consent---valid",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4891847988,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I have access to consent service",
+            "match": {
+              "location": "CreateSteps.iHaveAccessToConsentService()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3124031228,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I update a consent using \"validUpdate.json\" on \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "validUpdate.json",
+                  "offset": 26
+                },
+                {
+                  "val": "1",
+                  "offset": 48
+                }
+              ],
+              "location": "UpdateSteps.iUpdateAConsentUsingOn(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1003323239,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the following update consent result is available",
+            "match": {
+              "location": "UpdateSteps.theFollowingUpdateConsentResultIsAvailable()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@update"
+          }
+        ]
+      }
+    ],
+    "name": "Update Consent",
+    "description": "",
+    "id": "update-consent",
+    "keyword": "Feature",
+    "uri": "/Users/Olu/Documents/api-test/consent-api-test/src/test/resources/Features/UpdateConsent.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@regression"
+      }
+    ]
+  }
+]

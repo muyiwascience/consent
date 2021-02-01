@@ -1,0 +1,76 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Creating a consent - Valid",
+        "description": "",
+        "id": "create-consent;creating-a-consent---valid",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5383921956,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I have access to consent service",
+            "match": {
+              "location": "CreateSteps.iHaveAccessToConsentService()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3920143216,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I create a consent using \"validCreate.json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "validCreate.json",
+                  "offset": 26
+                }
+              ],
+              "location": "CreateSteps.iCreateAConsentUsing(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 387301956,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the following create consent result is available",
+            "match": {
+              "location": "CreateSteps.theFollowingCreateConsentResultIsAvailable()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@create"
+          }
+        ]
+      }
+    ],
+    "name": "Create Consent",
+    "description": "",
+    "id": "create-consent",
+    "keyword": "Feature",
+    "uri": "/Users/Olu/Documents/api-test/consent-api-test/src/test/resources/Features/CreateConsent.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@regression"
+      }
+    ]
+  }
+]
